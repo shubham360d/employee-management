@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="employeeName">Employee Name</label>
+                        <input type="text" name="employeeName" id="employeeName">
+                    </div>
+                    <div>
+                        <label for="designation">Designation</label>
+                        <input type="text" name="designation" id="designation">
+                    </div>
+                    <div>
+                        <label for="sal">Salaray</label>
+                        <input type="number" name="sal" id="sal">
+                    </div>
+                    <div>
+                        <label for="place">Work Place</label>
+                        <input type="text" name="place" id="place">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="empList">
+                        <thead>
+                            <tr>
+                                <th>Employee Name</th>
+                                <th>Designation</th>
+                                <th>Salary</th>
+                                <th>Work Place</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
